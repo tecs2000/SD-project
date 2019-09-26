@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 104 184 272 200)
+	(rect 96 184 264 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "A[0..3]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 248 952 264)
+	(rect 784 248 960 264)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "AMAIORB" (rect 90 0 139 12)(font "Arial" ))
+	(text "A_M_B" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -176,7 +176,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 664 208 760 304)
+	(rect 672 208 768 304)
 	(text "A_Maior_Bbit" (rect 5 0 80 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -211,6 +211,24 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 80 80))
 	)
 )
+(symbol
+	(rect 240 240 272 272)
+	(text "GND" (rect 6 8 16 29)(font "Arial" (font_size 6))(vertical))
+	(text "inst1" (rect -1 3 11 26)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 32 16)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 20 18 32 23)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 24 16)(pt 32 16))
+	)
+	(drawing
+		(line (pt 24 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 24))
+		(line (pt 24 8)(pt 24 24))
+	)
+	(rotate270)
+)
 (connector
 	(pt 288 240)
 	(pt 296 240)
@@ -225,12 +243,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 272 192)
-	(pt 288 192)
-	(bus)
-)
-(connector
-	(text "A[3]" (rect 272 213 284 233)(font "Arial" )(vertical))
+	(text "A[3]" (rect 272 197 284 217)(font "Arial" )(vertical))
 	(pt 288 192)
 	(pt 288 240)
 )
@@ -240,29 +253,7 @@ applicable agreement for further details.
 	(pt 288 272)
 )
 (connector
-	(text "B[0]" (rect 640 293 652 313)(font "Arial" )(vertical))
-	(pt 656 320)
-	(pt 656 240)
-)
-(connector
-	(pt 664 240)
-	(pt 656 240)
-)
-(connector
-	(text "A[0]" (rect 632 245 644 265)(font "Arial" )(vertical))
-	(pt 648 192)
-	(pt 648 272)
-)
-(connector
-	(pt 664 272)
-	(pt 648 272)
-)
-(connector
-	(pt 664 256)
-	(pt 632 256)
-)
-(connector
-	(text "A[1]" (rect 512 216 524 236)(font "Arial" )(vertical))
+	(text "A[1]" (rect 512 200 524 220)(font "Arial" )(vertical))
 	(pt 528 192)
 	(pt 528 240)
 )
@@ -298,18 +289,13 @@ applicable agreement for further details.
 	(pt 416 256)
 )
 (connector
-	(text "A[2]" (rect 392 213 404 233)(font "Arial" )(vertical))
+	(text "A[2]" (rect 392 197 404 217)(font "Arial" )(vertical))
 	(pt 408 192)
 	(pt 408 240)
 )
 (connector
 	(pt 416 240)
 	(pt 408 240)
-)
-(connector
-	(pt 288 192)
-	(pt 408 192)
-	(bus)
 )
 (connector
 	(pt 408 192)
@@ -336,8 +322,44 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 256)
-	(pt 776 256)
+	(pt 296 256)
+	(pt 272 256)
+)
+(connector
+	(text "B[0]" (rect 640 293 652 313)(font "Arial" )(vertical))
+	(pt 656 320)
+	(pt 656 240)
+)
+(connector
+	(text "A[0]" (rect 632 197 644 217)(font "Arial" )(vertical))
+	(pt 648 192)
+	(pt 648 272)
+)
+(connector
+	(pt 656 240)
+	(pt 672 240)
+)
+(connector
+	(pt 632 256)
+	(pt 672 256)
+)
+(connector
+	(pt 648 272)
+	(pt 672 272)
+)
+(connector
+	(pt 768 256)
+	(pt 784 256)
+)
+(connector
+	(pt 288 192)
+	(pt 408 192)
+	(bus)
+)
+(connector
+	(pt 264 192)
+	(pt 288 192)
+	(bus)
 )
 (junction (pt 288 320))
 (junction (pt 288 192))
