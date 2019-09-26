@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 224 112)
+	(rect 64 64 208 160)
 	(text "FullAdder4bitSigned" (rect 5 0 118 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -40,25 +40,25 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Complemento_a_2" (rect 0 0 103 14)(font "Arial" (font_size 8)))
-		(text "Complemento_a_2" (rect 21 59 124 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
+		(text "S[0..2]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[0..2]" (rect 21 59 57 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 208 32)
+		(pt 144 32)
 		(output)
 		(text "Overflow" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "Overflow" (rect 133 27 187 41)(font "Arial" (font_size 8)))
-		(line (pt 208 32)(pt 192 32))
+		(text "Overflow" (rect 69 27 123 41)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32))
 	)
 	(port
-		(pt 208 48)
+		(pt 144 64)
 		(output)
 		(text "R[0..3]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "R[0..3]" (rect 151 43 187 57)(font "Arial" (font_size 8)))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
+		(text "R[0..3]" (rect 87 59 123 73)(font "Arial" (font_size 8)))
+		(line (pt 144 64)(pt 128 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 80))
+		(rectangle (rect 16 16 128 80))
 	)
 )
