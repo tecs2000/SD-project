@@ -21,20 +21,20 @@ applicable agreement for further details.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 16 16 144 112)
-	(text "comp_a_2" (rect 5 0 64 14)(font "Arial" (font_size 8)))
+	(text "mux_4bit_comp2" (rect 5 0 100 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "B[0..3]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "B[0..3]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(text "S[0..3]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[0..3]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 128 32)
 		(output)
-		(text "R[0..3]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "R[0..3]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
+		(text "O[0..3]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "O[0..3]" (rect 70 27 107 41)(font "Arial" (font_size 8)))
 		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
