@@ -1,0 +1,189 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Adder_BCD
+# storage
+db|SD.(0).cnf
+db|SD.(0).cnf
+# case_insensitive
+# source_file
+|users|aca7|downloads|sd-project-master|adder_bcd.bdf
+1f3468f570f27e13ae4c4e2178bc1523
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+gamb2
+# storage
+db|SD.(1).cnf
+db|SD.(1).cnf
+# case_insensitive
+# source_file
+gamb2.bdf
+7539be2dde30c5f7aabf6f58a618fc51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_bcd:inst|gamb2:inst1
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder4bit
+# storage
+db|SD.(2).cnf
+db|SD.(2).cnf
+# case_insensitive
+# source_file
+fulladder4bit.bdf
+62d6866423d21582998b7df5581bc0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_bcd:inst|fulladder4bit:inst
+adder_bcd:inst|fulladder4bit:inst9
+}
+# macro_sequence
+
+# end
+# entity
+bit_a_bit
+# storage
+db|SD.(3).cnf
+db|SD.(3).cnf
+# case_insensitive
+# source_file
+bit_a_bit.bdf
+43bdd32ff1478da4828efb214967ce30
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_bcd:inst|fulladder4bit:inst|bit_a_bit:inst7
+adder_bcd:inst|fulladder4bit:inst|bit_a_bit:inst6
+adder_bcd:inst|fulladder4bit:inst|bit_a_bit:inst5
+adder_bcd:inst|fulladder4bit:inst|bit_a_bit:inst
+adder_bcd:inst|fulladder4bit:inst9|bit_a_bit:inst7
+adder_bcd:inst|fulladder4bit:inst9|bit_a_bit:inst6
+adder_bcd:inst|fulladder4bit:inst9|bit_a_bit:inst5
+adder_bcd:inst|fulladder4bit:inst9|bit_a_bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+gambi
+# storage
+db|SD.(4).cnf
+db|SD.(4).cnf
+# case_insensitive
+# source_file
+gambi.bdf
+c343cb2bbd7a97c1440245fb93e77
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_bcd:inst|gambi:inst4
+}
+# macro_sequence
+
+# end
+# entity
+Seven_Segment_Display
+# storage
+db|SD.(6).cnf
+db|SD.(6).cnf
+# case_insensitive
+# source_file
+seven_segment_display.bdf
+ede3bf6849298f1baf64bbb7b6df29c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+seven_segment_display:inst1
+seven_segment_display:inst2
+}
+# macro_sequence
+
+# end
+# entity
+BCD_Display
+# storage
+db|SD.(5).cnf
+db|SD.(5).cnf
+# case_insensitive
+# source_file
+bcd_display.bdf
+9dcb161f3cb99a9ceb7dbcb7e89d7e93
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Adder_BCD
+# storage
+db|SD.(7).cnf
+db|SD.(7).cnf
+# case_insensitive
+# source_file
+adder_bcd.bdf
+ba3b13f40f3737bc874b4469ed2b74f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_bcd:inst
+}
+# macro_sequence
+
+# end
+# complete
+
