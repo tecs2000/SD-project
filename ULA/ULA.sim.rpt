@@ -1,0 +1,318 @@
+Simulator report for ULA
+Thu Oct 03 14:16:34 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 144 nodes    ;
+; Simulation Coverage         ;      92.36 % ;
+; Total Number of Transitions ; 82587        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; ULA.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      92.36 % ;
+; Total nodes checked                                 ; 144          ;
+; Total output ports checked                          ; 144          ;
+; Total output ports with complete 1/0-value coverage ; 133          ;
+; Total output ports with no 1/0-value coverage       ; 10           ;
+; Total output ports with no 1-value coverage         ; 10           ;
+; Total output ports with no 0-value coverage         ; 11           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                           ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |Assembled_ULA|Overflow                                                                                    ; |Assembled_ULA|Overflow                                                                                    ; pin_out          ;
+; |Assembled_ULA|A[0]                                                                                        ; |Assembled_ULA|A[0]                                                                                        ; out              ;
+; |Assembled_ULA|A[1]                                                                                        ; |Assembled_ULA|A[1]                                                                                        ; out              ;
+; |Assembled_ULA|A[2]                                                                                        ; |Assembled_ULA|A[2]                                                                                        ; out              ;
+; |Assembled_ULA|A[3]                                                                                        ; |Assembled_ULA|A[3]                                                                                        ; out              ;
+; |Assembled_ULA|B[0]                                                                                        ; |Assembled_ULA|B[0]                                                                                        ; out              ;
+; |Assembled_ULA|B[1]                                                                                        ; |Assembled_ULA|B[1]                                                                                        ; out              ;
+; |Assembled_ULA|B[2]                                                                                        ; |Assembled_ULA|B[2]                                                                                        ; out              ;
+; |Assembled_ULA|B[3]                                                                                        ; |Assembled_ULA|B[3]                                                                                        ; out              ;
+; |Assembled_ULA|S[1]                                                                                        ; |Assembled_ULA|S[1]                                                                                        ; out              ;
+; |Assembled_ULA|S[2]                                                                                        ; |Assembled_ULA|S[2]                                                                                        ; out              ;
+; |Assembled_ULA|Status                                                                                      ; |Assembled_ULA|Status                                                                                      ; pin_out          ;
+; |Assembled_ULA|HEX0_D[6]                                                                                   ; |Assembled_ULA|HEX0_D[6]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[0]                                                                                   ; |Assembled_ULA|HEX1_D[0]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[1]                                                                                   ; |Assembled_ULA|HEX1_D[1]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[2]                                                                                   ; |Assembled_ULA|HEX1_D[2]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[3]                                                                                   ; |Assembled_ULA|HEX1_D[3]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[4]                                                                                   ; |Assembled_ULA|HEX1_D[4]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[5]                                                                                   ; |Assembled_ULA|HEX1_D[5]                                                                                   ; pin_out          ;
+; |Assembled_ULA|HEX1_D[6]                                                                                   ; |Assembled_ULA|HEX1_D[6]                                                                                   ; pin_out          ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst30                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst30                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst22                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst22                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst21                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst21                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst24                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst24                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|abcD                                         ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|abcD                                         ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst5                                        ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst5                                        ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst                                         ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst                                         ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst25                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst25                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst7                                        ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst7                                        ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst10                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst10                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst11                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst11                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst28                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst28                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst9                                        ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst9                                        ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst26                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst26                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst14                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst14                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst13                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst13                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst29                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst29                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst16                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst16                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst17                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst17                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst15                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst15                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst27                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst27                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst19                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst19                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst20                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst20                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst18                                       ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst18                                       ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst5 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst5 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst3 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst3 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst4 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst4|inst4 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst5 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst5 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst3 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst3 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst4 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst2|inst4 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst5  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst5  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst3  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst3  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst4  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst|inst4  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst15  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst15  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst16  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst16  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst10  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst10  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst17  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst17  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst11  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|comp_a_2:inst3|inst11  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst5|inst3 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|mux_4bit_comp2:inst31|mux_2_1bit:inst5|inst3 ; out0             ;
+; |Assembled_ULA|ula:inst|ands:inst1|inst                                                                    ; |Assembled_ULA|ula:inst|ands:inst1|inst                                                                    ; out0             ;
+; |Assembled_ULA|ula:inst|ands:inst1|inst1                                                                   ; |Assembled_ULA|ula:inst|ands:inst1|inst1                                                                   ; out0             ;
+; |Assembled_ULA|ula:inst|ands:inst1|inst2                                                                   ; |Assembled_ULA|ula:inst|ands:inst1|inst2                                                                   ; out0             ;
+; |Assembled_ULA|ula:inst|ands:inst1|inst3                                                                   ; |Assembled_ULA|ula:inst|ands:inst1|inst3                                                                   ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst9                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst9                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst7                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst7                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst2                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst2                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst8                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst8                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst13                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst13                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst11                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst11                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst3                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst3                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst12                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst12                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst18                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst18                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst15                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst15                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst4                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst4                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst17                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst17                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst23                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst23                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst21                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst21                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst5                                                              ; |Assembled_ULA|ula:inst|multires:inst13|inst5                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multires:inst13|inst22                                                             ; |Assembled_ULA|ula:inst|multires:inst13|inst22                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|igual:inst9|inst5                                                                  ; |Assembled_ULA|ula:inst|igual:inst9|inst5                                                                  ; out0             ;
+; |Assembled_ULA|ula:inst|igual:inst9|inst1                                                                  ; |Assembled_ULA|ula:inst|igual:inst9|inst1                                                                  ; out0             ;
+; |Assembled_ULA|ula:inst|igual:inst9|inst                                                                   ; |Assembled_ULA|ula:inst|igual:inst9|inst                                                                   ; out0             ;
+; |Assembled_ULA|ula:inst|igual:inst9|inst2                                                                  ; |Assembled_ULA|ula:inst|igual:inst9|inst2                                                                  ; out0             ;
+; |Assembled_ULA|ula:inst|igual:inst9|inst3                                                                  ; |Assembled_ULA|ula:inst|igual:inst9|inst3                                                                  ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst|inst1                                            ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst|inst1                                            ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst3                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst3                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst1                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst1                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst2                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst2                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst                                            ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst2|inst                                            ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst3                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst3                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst1                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst1                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst2                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst2                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst                                            ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst3|inst                                            ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst3                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst3                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst1                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst1                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst2                                           ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst2                                           ; out0             ;
+; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst                                            ; |Assembled_ULA|ula:inst|a_maior_b:inst7|a_maior_bbit:inst4|inst                                            ; out0             ;
+; |Assembled_ULA|ula:inst|multibool:inst12|inst7                                                             ; |Assembled_ULA|ula:inst|multibool:inst12|inst7                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multibool:inst12|inst5                                                             ; |Assembled_ULA|ula:inst|multibool:inst12|inst5                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multibool:inst12|inst                                                              ; |Assembled_ULA|ula:inst|multibool:inst12|inst                                                              ; out0             ;
+; |Assembled_ULA|ula:inst|multibool:inst12|inst1                                                             ; |Assembled_ULA|ula:inst|multibool:inst12|inst1                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|multibool:inst12|inst4                                                             ; |Assembled_ULA|ula:inst|multibool:inst12|inst4                                                             ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst10                                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst10                                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst7                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst7                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst1                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst1                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst9                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst9                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst6                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst6                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst8                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst8                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst5                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst5                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst3                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst3                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst4                                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|inst4                                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst1                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst1                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst7                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst7                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst6                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst6                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst5                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst12|inst5                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst1                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst1                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst7                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst7                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst6                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst6                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst5                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst13|inst5                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst1                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst1                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst                                     ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst                                     ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst7                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst7                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst6                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst6                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst5                                    ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|bit_a_bit:inst14|inst5                                    ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst8                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst8                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst3                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst3                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst4                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst4                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst2                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst2                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst7                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst7                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst6                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst6                                         ; out0             ;
+; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst5                                         ; |Assembled_ULA|ula:inst|fulladder4bitsigned:inst|signal:inst|inst5                                         ; out0             ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |Assembled_ULA|HEX0_D[0]                                             ; |Assembled_ULA|HEX0_D[0]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[1]                                             ; |Assembled_ULA|HEX0_D[1]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[2]                                             ; |Assembled_ULA|HEX0_D[2]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[3]                                             ; |Assembled_ULA|HEX0_D[3]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[4]                                             ; |Assembled_ULA|HEX0_D[4]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[5]                                             ; |Assembled_ULA|HEX0_D[5]                                             ; pin_out          ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst23 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst23 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst6  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst6  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst8  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst8  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst12 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst12 ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |Assembled_ULA|S[0]                                                  ; |Assembled_ULA|S[0]                                                  ; out              ;
+; |Assembled_ULA|HEX0_D[0]                                             ; |Assembled_ULA|HEX0_D[0]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[1]                                             ; |Assembled_ULA|HEX0_D[1]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[2]                                             ; |Assembled_ULA|HEX0_D[2]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[3]                                             ; |Assembled_ULA|HEX0_D[3]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[4]                                             ; |Assembled_ULA|HEX0_D[4]                                             ; pin_out          ;
+; |Assembled_ULA|HEX0_D[5]                                             ; |Assembled_ULA|HEX0_D[5]                                             ; pin_out          ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst23 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst23 ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst6  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst6  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst8  ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst8  ; out0             ;
+; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst12 ; |Assembled_ULA|display:inst9|seven_segment_display_comp2:inst|inst12 ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Oct 03 14:16:33 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
+Info: Using vector source file "C:/Users/aca7/Downloads/SD-project-master/ULA/ULA.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of ULA.vwf called ULA.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      92.36 %
+Info: Number of transitions in simulation is 82587
+Info: Vector file ULA.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Thu Oct 03 14:16:34 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
