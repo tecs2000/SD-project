@@ -117,11 +117,6 @@ applicable agreement for further details.
 	(pt 528 296)
 )
 (connector
-	(text "Saida[0]" (rect 480 252 492 292)(font "Arial" )(vertical))
-	(pt 496 184)
-	(pt 496 296)
-)
-(connector
 	(pt 672 184)
 	(pt 720 184)
 	(bus)
@@ -140,5 +135,10 @@ applicable agreement for further details.
 	(pt 496 184)
 	(pt 528 184)
 	(bus)
+)
+(connector
+	(text "V[0]" (rect 480 252 492 272)(font "Arial" )(vertical))
+	(pt 496 184)
+	(pt 496 296)
 )
 (junction (pt 496 184))

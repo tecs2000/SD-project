@@ -257,11 +257,6 @@ applicable agreement for further details.
 	(pt 472 232)
 )
 (connector
-	(pt 456 328)
-	(pt 472 328)
-	(bus)
-)
-(connector
 	(text "R[3]" (rect 456 300 468 321)(font "Arial" )(vertical))
 	(pt 472 232)
 	(pt 472 328)
@@ -368,43 +363,6 @@ applicable agreement for further details.
 	(pt 1048 328)
 )
 (connector
-	(pt 616 392)
-	(pt 616 216)
-)
-(connector
-	(pt 808 216)
-	(pt 808 392)
-)
-(connector
-	(pt 808 392)
-	(pt 616 392)
-	(bus)
-)
-(connector
-	(pt 1000 216)
-	(pt 1000 392)
-)
-(connector
-	(pt 1000 392)
-	(pt 808 392)
-	(bus)
-)
-(connector
-	(text "O[1]" (rect 984 200 1005 212)(font "Arial" ))
-	(pt 984 216)
-	(pt 1000 216)
-)
-(connector
-	(text "O[2]" (rect 792 200 813 212)(font "Arial" ))
-	(pt 792 216)
-	(pt 808 216)
-)
-(connector
-	(text "O[3]" (rect 600 200 621 212)(font "Arial" ))
-	(pt 616 216)
-	(pt 600 216)
-)
-(connector
 	(pt 1176 216)
 	(pt 1192 216)
 )
@@ -422,6 +380,49 @@ applicable agreement for further details.
 	(text "O[0]" (rect 1176 364 1188 385)(font "Arial" )(vertical))
 	(pt 1192 216)
 	(pt 1192 392)
+)
+(connector
+	(pt 600 216)
+	(pt 616 216)
+)
+(connector
+	(text "O[3]" (rect 600 364 612 385)(font "Arial" )(vertical))
+	(pt 616 392)
+	(pt 616 216)
+)
+(connector
+	(pt 808 216)
+	(pt 792 216)
+)
+(connector
+	(pt 616 392)
+	(pt 808 392)
+	(bus)
+)
+(connector
+	(pt 808 392)
+	(pt 1000 392)
+	(bus)
+)
+(connector
+	(text "O[2]" (rect 792 364 804 385)(font "Arial" )(vertical))
+	(pt 808 216)
+	(pt 808 392)
+)
+(connector
+	(pt 1000 216)
+	(pt 984 216)
+)
+(connector
+	(text "O[1]" (rect 983 366 995 387)(font "Arial" )(vertical))
+	(pt 1000 216)
+	(pt 1000 392)
+)
+(connector
+	(text "R[0..3]" (rect 456 312 490 324)(font "Arial" ))
+	(pt 456 328)
+	(pt 472 328)
+	(bus)
 )
 (junction (pt 304 144))
 (junction (pt 304 248))
